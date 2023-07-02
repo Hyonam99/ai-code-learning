@@ -1,0 +1,172 @@
+.gpt3_header {
+  display: flex;
+}
+
+.gpt3_header-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-right: 5rem;
+}
+
+.gpt3_header-content h1 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+  letter-spacing: -0.04rem;
+}
+
+.gpt3_header-content p {
+  font-family: var(--font-family);
+  font-size: 20px;
+  line-height: 27px;
+
+  color: var(--color-text);
+  margin-top: 1.5rem;
+}
+
+.gpt3_header-content_input {
+  width: 100%;
+  margin: 2rem 0rem 1rem;
+  display: flex;
+}
+
+.gpt3_header-content_input input{
+  width: 100%;
+  flex: 2;
+  min-height: 50px;
+
+  font-family: var(--font-family);
+  font-size: 20px;
+  line-height: 27px;
+
+  background: var(--color-footer);
+  border: 2px solid var(--color-footer);
+  padding: 0 1rem;
+
+  outline: none;
+  color: #fff;
+  border-radius: 5px 0 0 5px;
+}
+
+.gpt3_header-content_input button{
+  width: 100%;
+  flex: 0.6;
+  min-height: 50px;
+
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 27px;
+
+  background: #FF4820;
+  padding: 0 1rem;
+  color: #fff;
+  
+  outline: none;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.gpt3_header-content_people {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.gpt3_header-content_people img {
+  width: 181.7px;
+  height: 38px;
+}
+
+.gpt3_header-content_people p {
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 38px;
+
+  text-align: center;  
+  color: var(--color-text);
+  margin: 0 0 0 1rem;
+}
+
+.gpt3_header-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gpt3_header-image img{
+  width: 100%;
+  height: 100%;
+}
+
+/*MEDIA QUERIES*/
+
+/*Tablet devices*/
+
+@media screen and (max-width: 1050px) {
+  .gpt3_header {
+    flex-direction: column;
+  }
+
+  .gpt3_header-content {
+    margin: 0 0 3rem;
+  }
+}
+
+
+/*Mobile devices regular screen*/
+
+@media screen and (max-width: 650px) {
+  .gpt3_header h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .gpt3_header p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .gpt3_header-content_people {
+    flex-direction: column;
+  }
+
+  .gpt3_header-content_people p {
+    margin: 0;
+  }
+
+  .gpt3_header-content_input input,
+  .gpt3_header-content_input button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+/*Mobile devices regular screen*/
+
+@media screen and (max-width: 490px) {
+  .gpt3_header h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .gpt3_header p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .gpt3_header-content_input input,
+  .gpt3_header-content_input button {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
